@@ -20,6 +20,13 @@ footer {background-color: black;
         font-size: 16pt;  
         text-align: right;
 }
+a {
+    text-decoration: none;
+    color: green;
+    transition: 1.5s 1.5s;
+    transition-delay: 1.5s;
+
+}
 
 a:visited {
     color: yellow;
@@ -30,7 +37,11 @@ a:hover {
     color: red;
     text-decoration: underline;
     background-color: white;
-    font-weight: bold;
+    font-weight: bold; 
+    text-shadow: 5px 5px 6px white;
+    transition: 0.3s
+
+
 }
 
 a:active {
