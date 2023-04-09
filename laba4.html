@@ -8,15 +8,40 @@
     <title>Старченко Марк Альбертович. Лабораторная работа 4.</title>
     <link rel="stylesheet" href="main.css">
     <style>
-        div {
+
+        main{
+            z-index: 0;
+        }
+
+        main div {
             margin: 20px;
             border: 1px solid;
             border-radius: 7px;
             padding: 7px;
             width: 500px;
-            height: 250px;
+            height: 150px;
             overflow-x: hidden;
             overflow-y: auto;
+            position: relative;
+            background: linear-gradient(#00F56A, #ddf);
+            z-index: 1;
+            
+        }
+
+        .second {
+            left: 380px;
+            top: 120px;
+            position: fixed;
+            transition: 200ms;
+            z-index: 0;
+
+        }
+        .second:hover {
+            transition: 300ms;
+            left: 380px;
+            top: 120px;
+            position: fixed;
+            z-index: 3;
         }
     </style>
 </head>
@@ -35,7 +60,7 @@
         расставлено по возрастанию сложности: как в учебнике, только интересно.
         </div>
 
-        <div>
+        <div class="second">
         В первой главе я задаю тон всей книге: это в первую очередь развлечение для скучающих гопников-интеллектуалов.
         Мы с моими маленькими читателями попробуем представить себе мир как инженерную схему, этакий мысленный каркас. Я
         пишу о том, что бывает, когда схема несовершенна, и почему банки, а не негры потеряли дома во время ипотечного
