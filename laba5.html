@@ -55,6 +55,19 @@
             output.style.color = textColor;
 
         }
+
+        function ShowSumProduct(){
+            let Apple = parseInt((document.getElementById('numberApple').value));
+            let Orange = parseInt((document.getElementById('numberOrange').value));
+            let Grushi = parseInt((document.getElementById('numberGrushi').value));
+            let Dini = parseInt((document.getElementById('numberDini').value));
+
+            let result = (Apple * 100) + (Orange * 150) + (Grushi * 80) + (Dini * 300);
+
+            let output = document.getElementById('itog');
+            output.innerHTML = 'Итоговая сумма: ' + result + ' рублей.';
+
+        }
     </script>
     <style>
         .message1 {
@@ -75,6 +88,28 @@
             width: 300px;
             height: 40px;
         }
+        .Shop {
+            margin: 5px;
+            border: 2px solid;
+            height: 350px;
+            width: 450px;
+            text-align: left;
+            padding: 2px;
+            font-size: 12pt;
+        }
+
+        .korzina {
+            margin: 5px;
+            text-align: center;
+            padding: 2px;
+            font-size: 20pt;
+            font-weight: bold;
+        }
+
+        #itog {
+            padding-top: 10px;
+}
+
     </style>
 
 </head>
@@ -90,7 +125,7 @@
         <div class="message1" onclick="ShowSum()">Найти сумму чисел</div>
         <div class="message1" onclick="ShowRuzn()">Найти разность чисел</div>
         <div class="message1" onclick="ShowUmn()">Найти произведение чисел</div>
-        <div class="message1" onclick="ShowDel()">Найти часное чисел</div>
+        <div class="message1" onclick="ShowDel()">Найти частное чисел</div>
 
         <div> 
             <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow')">
@@ -100,6 +135,17 @@
         </div>
         
         <div id="output"></div>
+
+        <div class="Shop">
+            <div class="korzina">Корзина товаров</div>
+            <label>Яблоки(100 рублей/штука)   <input type="number" value="0" id="numberApple"></label><br>
+            <label>Апельсины(150 рублей/штука)<input type="number" value="0" id="numberOrange"></label><br>
+            <label>Груши(80 рублей/штука)     <input type="number" value="0" id="numberGrushi"></label><br>
+            <label>Дыня(300 рублей/штука)     <input type="number" value="0" id="numberDini"></label><br>
+            <input type="button" value="Рассчитать" onclick="ShowSumProduct()">
+            <div id="itog">Итоговая сумма: </div>
+        </div>
+
     </main>
 
     <footer>
