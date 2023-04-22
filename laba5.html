@@ -45,7 +45,7 @@
             let a = parseInt(inputA.value);
             let b = parseInt(inputB.value);
             let result = a/b;
-            alert ('СЧасное ' + a + ' и ' + b + ' равна ' + result);
+            alert ('Частное ' + a + ' и ' + b + ' равна ' + result);
         }
 
         function changeOutput(buttonNum,backCSolor,textColor){
@@ -66,8 +66,15 @@
 
             let output = document.getElementById('itog');
             output.innerHTML = 'Итоговая сумма: ' + result + ' рублей.';
-
         }
+
+
+        function removekrugi(krugi) {
+            krugi.style.height = '0';
+            krugi.style.width = '0';
+            krugi.style.fontSize = '0';
+        }
+
     </script>
     <style>
         .message1 {
@@ -108,7 +115,61 @@
 
         #itog {
             padding-top: 10px;
-}
+        }
+
+		.krugi{
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			text-align: center;
+			font-size: 24px;
+			line-height: 100px;
+			margin-right: 20px;
+			color: #fff;
+			font-weight: bold;
+            margin-top: 30px;
+		}
+
+		.krug1 {
+			background-color: #f44336;
+		}
+
+		.krug2 {
+			background-color: #e91e63;
+		}
+
+		.krug3 {
+			background-color: #9c27b0;
+		}
+
+		.krug4 {
+			background-color: #673ab7;
+		}
+
+		.krug5 {
+			background-color: #3f51b5;
+		}
+
+		.krug6 {
+			background-color: #2196f3;
+		}
+
+		.krug7 {
+			background-color: #00bcd4;
+		}
+
+		.krug8 {
+			background-color: #009688;
+		}
+
+		.krug9 {
+			background-color: #4caf50;
+		}
+
+		.krug10 {
+			background-color: #ff9800;
+		}
 
     </style>
 
@@ -145,6 +206,17 @@
             <input type="button" value="Рассчитать" onclick="ShowSumProduct()">
             <div id="itog">Итоговая сумма: </div>
         </div>
+
+        <div class="krugi krug1" onclick="removekrugi(this)">1</div>
+        <div class="krugi krug2" onclick="removekrugi(this)">2</div>
+        <div class="krugi krug3" onclick="removekrugi(this)">3</div>
+        <div class="krugi krug4" onclick="removekrugi(this)">4</div>
+        <div class="krugi krug5" onclick="removekrugi(this)">5</div>
+        <div class="krugi krug6" onclick="removekrugi(this)">6</div>
+        <div class="krugi krug7" onclick="removekrugi(this)">7</div>
+        <div class="krugi krug8" onclick="removekrugi(this)">8</div>
+        <div class="krugi krug9" onclick="removekrugi(this)">9</div>
+        <div class="krugi krug10" onclick="removekrugi(this)">10</div>
 
     </main>
 
