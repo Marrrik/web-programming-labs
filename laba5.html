@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Старченко Марк Альбертович. Лабораторная работа 5</title>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function ShowAuthor(){
+            let author = 'Автор страницы:\nСтарченок Марк Альбертович';
+            alert(author);
+        }
+
+        function ShowSum(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a + b;
+            alert ('Сумма ' + a + ' и ' + b + ' равна ' + result);
+        }
+
+        function ShowRuzn(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a - b;
+            alert ('Разность ' + a + ' и ' + b + ' равна ' + result);
+        }
+
+        function ShowUmn(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a * b;
+            alert ('Произведение ' + a + ' и ' + b + ' равна ' + result);
+        }
+
+        function ShowDel(){
+            let inputA = document.getElementById('numberA');
+            let inputB = document.getElementById('numberB');
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a/b;
+            alert ('СЧасное ' + a + ' и ' + b + ' равна ' + result);
+        }
+    </script>
+    <style>
+        .message1 {
+            color: black;
+            background-color: bisque;
+            font-weight: bold;
+            border: 3px solid;
+            border-radius: 7px;
+            width: 250px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .message2 {
+            color: black;
+            background-color: bisque;
+            font-weight: bold;
+            border: 3px solid;
+            border-radius: 7px;
+            width: 250px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <header onclick="ShowAuthor()">
+            НГТУ, ФБ, Лабораторная работа 5.
+    </header>
+
+    <main>
+        <label>Первое число: <input type="number" value="5154" id="numberA"></label><br>
+        <label>Второе число: <input type="number" value="7891" id="numberB"></label><br>
+        <div class="message1" onclick="ShowAuthor()">Узнать, кто автор страницы</div>
+        <div class="message1" onclick="ShowSum()">Найти сумму чисел</div>
+        <div class="message2" onclick="ShowRuzn()">Найти разность чисел</div>
+        <div class="message2" onclick="ShowUmn()">Найти произведение чисел</div>
+        <div class="message2" onclick="ShowDel()">Найти часное чисел</div>
+    </main>
+
+    <footer>
+        &copy;<i>Марк Старченко, ФБИ-14, 2 курс, 2023</i>
+    </footer>
+
+</body>
+</html>
