@@ -1,0 +1,332 @@
+commit 3b6b8b10637abd5ddb7a4af57fca2d1dcd368fc5
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Fri Apr 14 20:14:48 2023 +0700
+
+    Комикс
+
+commit 28b814dbe8d8545cd3894926030a86c46497ce26
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Apr 12 18:49:15 2023 +0700
+
+    были внесены правки с ссылками для3 лаб и отсутпы
+
+commit 1297a43f2bf5ad4990bef815b393b65838eb4fbf
+Author: Marrrik <104144238+Marrrik@users.noreply.github.com>
+Date:   Sun Apr 9 22:28:28 2023 +0700
+
+    Ронни
+
+commit 6569e5fbc382bbde9138f6c76eb53f31af31ff40
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Sun Apr 9 21:59:05 2023 +0700
+
+
+    боковая панель
+
+commit 3176ea79f79df4d1870d87daeebccb3298ef9e59
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Sun Apr 9 18:13:35 2023 +0700
+
+    позиционирование
+
+commit f50c7bca430c53c3a8697ae6e58cf281d7e9571b
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Sat Apr 8 23:20:39 2023 +0700
+
+    Настройка скролла
+
+commit b3804aa6dcb92aa231ba31b4e26b84e438c43baa
+Merge: 9598495 6fbd7c7
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Sat Apr 8 19:20:01 2023 +0700
+
+    Merge branch 'main' of https://github.com/Marrrik/web-programming-labs
+
+commit 9598495bff1e34acb6e4b50ea257758f1138801b
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Sat Apr 8 19:16:01 2023 +0700
+
+    Заготовка
+
+commit 6fbd7c7a540dfc0e6966de0457c6928606afa3bb
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Tue Apr 4 18:33:50 2023 +0700
+
+    Поменял фон
+
+commit e0ab821ca81ff022141f018119a71b944d682ae1
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Tue Apr 4 01:09:12 2023 +0700
+
+    Проверка
+
+commit ec38481d2a36930eaeebdcbc97d503a753d0442c
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Mon Mar 27 20:03:52 2023 +0700
+
+    Так надо)
+
+commit e2b4dd3f4cccc8794b4109acfeafb09110c11b57
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 20:38:41 2023 +0700
+
+    Офромление ссылок
+
+commit 6db4749929de9f790e5483dd4b19d6b7e5a0649a
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 15:15:33 2023 +0700
+
+    Градиент
+
+commit 68617009d0426f1fece086a32eb08e41ec5d3040
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 15:07:05 2023 +0700
+
+    Переход для формул
+
+commit bb330b0f270089c68fa73477807ac60b1b1aaf47
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 15:00:33 2023 +0700
+
+    Прозрачность
+
+commit e970a209805da290548a2262d43eb0f8f13de87f
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 14:44:40 2023 +0700
+
+    Текст по формату
+
+commit 4ce8d19f6761cdb92be9ef416ce040b6caa58e16
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 12:54:23 2023 +0700
+
+    заготовка к 3 лабораторной работе
+
+commit 6a6b1d1d466e178908ed3f5d7cf90349052ceb51
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 12:42:30 2023 +0700
+
+    Стили ссылок
+
+commit 4dd1ba9944822054cf9ec96656a24dd0f5686609
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 11:56:52 2023 +0700
+
+    Стили меню
+
+commit e064f7dc31e3ba998b1bf3cb32455071194d44bd
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Mar 22 11:08:53 2023 +0700
+
+    лабораторная работа 3.
+
+commit 594d38131fee8852aacc09b4f88708221fcf046b
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Thu Feb 23 11:48:52 2023 +0700
+
+    допонил подвал
+
+commit e6cf439292c432025fc3593a6b5c565e8ec78995
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 21:41:00 2023 +0700
+
+    Так нужно было
+
+commit 8e6b4349f9571f2e3ff977c7f723e3c6bfbe665d
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 18:55:20 2023 +0700
+
+    Меню
+
+commit cb14f4245ad51022e7fc3c6f66ef18b86eaa01f8
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 18:38:54 2023 +0700
+
+    Заготовка меню
+
+commit 64bdad2b307eba91d073cf55e918fb23400ccf2f
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 18:26:07 2023 +0700
+
+    Стили второй таблицы
+
+commit 723bb4ee05b69a8427251d63b4352c4b44464c16
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 18:19:18 2023 +0700
+
+    Выделение новинок
+
+commit be7824a569822d00fbae16c9ac7a45fd5c0c38c8
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 17:18:08 2023 +0700
+
+    Исправил ошибку(перепутал тэг sub и sup для второй таблицы)
+
+commit 6e01f0bb1e884b6a288ac2360a357458543f1764
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 17:12:43 2023 +0700
+
+    Выделение слова Compare
+
+commit 83d9dfdd36a0e565154e8fd16b8c01c789827f08
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 17:00:13 2023 +0700
+
+    Стили заголовка
+
+commit 7645c1af802a6450763f48799f0a6d665ef40bd2
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 13:11:28 2023 +0700
+
+    Стили заголовка
+
+commit f8f9fe57f8178f3008d2223a9f5e9a19dca8d7d3
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 13:02:20 2023 +0700
+
+    stile body
+
+commit 17e7274ef86d4ce1f8c323b9b15d01173d782009
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 12:56:00 2023 +0700
+
+    USB-дубликаторы Intelligent Series
+
+commit 38cb34f76570785d5711d846dfa835455475334d
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 12:25:25 2023 +0700
+
+    USB дубликаторы серии Super-Tower
+
+commit e7181db7f38bf980c6a3c15de204ebadbc7b49cc
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 12:13:58 2023 +0700
+
+    Таблица
+
+commit 3550c420b88bedccb1a99bcf1d732ec7b1995add
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 11:55:30 2023 +0700
+
+    Списки
+
+commit 0b735901e44d0eef01427f234dc4536fa1b5364f
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 11:40:30 2023 +0700
+
+    USB-Дубликатор
+
+commit 4e57d9ed011e945576d0c4bdaf0df4e007f58f7b
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 11:01:28 2023 +0700
+
+    Заготовка
+
+commit 9db98b255c6a17e31b5193e3b5c6e4816183f9c9
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 22 10:50:43 2023 +0700
+
+    Лабораторная работа 2
+
+commit 5b8acad212a2217cadd2ae759631c04723258663
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 22:19:58 2023 +0700
+
+    форматирвоание текста
+
+commit 18557a3749b7d75747366e741f09dc971513d319
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 17:17:36 2023 +0700
+
+    дополнительный текст
+
+commit 43e0607a2d2256b086721ccf2e74248ed0f2034e
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 17:00:52 2023 +0700
+
+    Структура документа
+
+commit 4629e4c51468df3351db8c50e01a04b31fdf4f48
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 16:47:49 2023 +0700
+
+    огрузил 2 картики
+
+commit d54c6230f3e9fb7031e737d475ec71d470f2359a
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 16:41:20 2023 +0700
+
+    измениниа картинка1
+
+commit c6507a8e16ab1fc7697cfd3892a0f94f5afcaeb4
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 16:34:24 2023 +0700
+
+    картинка1
+
+commit c8e7f26ee507d5a5ee552695798b77ee31de9334
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 16:22:36 2023 +0700
+
+    заголовки
+
+commit e7169dabdf5b7d58dc277afa19e7ea9b4f791c43
+Merge: 97b7b34 2a088a0
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 13:37:28 2023 +0700
+
+    Merge branch 'main' of https://github.com/Marrrik/web-programming-labs
+
+commit 97b7b34abca56000f108b320d51736bbfbcc21aa
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 13:37:01 2023 +0700
+
+    обзацы
+
+commit 2a088a0a9fcae98ee3a3e77d0f91a38d1c38a7d7
+Author: Marrrik <104144238+Marrrik@users.noreply.github.com>
+Date:   Wed Feb 8 13:18:52 2023 +0700
+
+    Добавлены файлы дисконт
+
+commit 9b9bcc645e2c0c0f597eec38603192b0bd66d5df
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 13:04:33 2023 +0700
+
+     ыделение жирным
+
+commit 5606c626905bc530fc619048edbcb430789a087e
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 12:53:24 2023 +0700
+
+    Выделение курсивом слова разница
+
+commit 69d26a021c748b28687220d355da506547e9350f
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 12:48:50 2023 +0700
+
+    Выделение курсивом слова вычет
+
+commit cc3c75bbbbc798a5bd96bb2d73ace9023e6272a6
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 12:47:19 2023 +0700
+
+    Выделение курсивом слова скидка
+
+commit 390c5bb8e62a9f25de5cdb810ba9c545126f890e
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 12:41:54 2023 +0700
+
+    Выделение курсивом слова discount
+
+commit 1b0b69015f5b38b53d0391bc4b71a2094dea1db4
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 12:34:41 2023 +0700
+
+    Oпределение дисконта
+
+commit 9c034329fe4635fb05ad3bf82db23937dc8627f8
+Author: Марк Старченко <slaidsuper@gmail.com>
+Date:   Wed Feb 8 12:24:28 2023 +0700
+
+    абораторная работа 1

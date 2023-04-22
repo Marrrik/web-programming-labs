@@ -23,10 +23,12 @@ header:hover {
     font-size: 20pt;  
     font-weight: bold;
     transition: 1s;
-
-
 }
 
+main {
+        margin: 10px 20px;
+    }
+    
 footer {background-color: black;
         color: lightgreen; 
         padding: 10px; 
@@ -82,7 +84,6 @@ a:active {
     color: pink;
     background-color: green;
 }
-
 
 
 
