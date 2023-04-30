@@ -48,11 +48,12 @@
             alert ('Частное ' + a + ' и ' + b + ' равна ' + result);
         }
 
-        function changeOutput(buttonNum,backCSolor,textColor){
+        function changeOutput(buttonNum,backCSolor,textColor,border){
             let output = document.getElementById('output');
             output.innerHTML = 'Нажата кнопка 1' + buttonNum;
             output.style.backgroundColor = backCSolor;
             output.style.color = textColor;
+            output.style.border = border;
 
         }
 
@@ -68,11 +69,9 @@
             output.innerHTML = 'Итоговая сумма: ' + result + ' рублей.';
         }
 
-
-        function removekrugi(krugi) {
-            krugi.style.height = '0';
-            krugi.style.width = '0';
-            krugi.style.fontSize = '0';
+        function removekrugi(number) {
+           let del = document.getElementById(number)
+           del.style.opacity = '0'
         }
 
     </script>
@@ -103,6 +102,8 @@
             text-align: left;
             padding: 2px;
             font-size: 12pt;
+            background-color: bisque;
+            padding: 5px;
         }
 
         .korzina {
@@ -117,7 +118,7 @@
             padding-top: 10px;
         }
 
-		.krugi{
+		.krugi div {
 			display: inline-block;
 			width: 100px;
 			height: 100px;
@@ -131,46 +132,45 @@
             margin-top: 30px;
 		}
 
-		.krug1 {
-			background-color: #f44336;
-		}
+        .krug1 {
+            background-color: #dea4b7
+        }
 
-		.krug2 {
-			background-color: #e91e63;
-		}
+        .krug2 {
+            background-color: #e91e63;
+        }
 
-		.krug3 {
-			background-color: #9c27b0;
-		}
+        .krug3 {
+            background-color: #9c27b0;
+        }
 
-		.krug4 {
-			background-color: #673ab7;
-		}
+        .krug4 {
+            background-color: #673ab7;
+        }
 
-		.krug5 {
-			background-color: #3f51b5;
-		}
+        .krug5 {
+            background-color: #3f51b5;
+        }
 
-		.krug6 {
-			background-color: #2196f3;
-		}
+        .krug6 {
+            background-color: #2196f3;
+        }
 
-		.krug7 {
-			background-color: #00bcd4;
-		}
+        .krug7 {
+            background-color: #00bcd4;
+        }
 
-		.krug8 {
-			background-color: #009688;
-		}
+        .krug8 {
+            background-color: #009688;
+        }
 
-		.krug9 {
-			background-color: #4caf50;
-		}
+        .krug9 {
+            background-color: #4caf50;
+        }
 
-		.krug10 {
-			background-color: #ff9800;
-		}
-
+        .krug10 {
+            background-color: #ff9800;
+        }
     </style>
 
 </head>
@@ -189,35 +189,36 @@
         <div class="message1" onclick="ShowDel()">Найти частное чисел</div>
 
         <div> 
-            <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow')">
-            <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'red', 'blue')">
-            <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'red', 'green')">
-            <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'red', 'white')">
+            <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'bisque', 'red', 'thick double')">
+            <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'bisque', 'blue', 'thick double')">
+            <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'bisque', 'black', 'thick double')">
+            <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'bisque', 'grey', 'thick double')">
         </div>
         
         <div id="output"></div>
 
         <div class="Shop">
             <div class="korzina">Корзина товаров</div>
-            <label>Яблоки(100 рублей/штука)   <input type="number" value="0" id="numberApple"></label><br>
-            <label>Апельсины(150 рублей/штука)<input type="number" value="0" id="numberOrange"></label><br>
-            <label>Груши(80 рублей/штука)     <input type="number" value="0" id="numberGrushi"></label><br>
-            <label>Дыня(300 рублей/штука)     <input type="number" value="0" id="numberDini"></label><br>
+            <label>Яблоки(100 рублей/штука)   <div><input type="number" value="0" id="numberApple"></label><br></div>
+            <label>Апельсины(150 рублей/штука)<div><input type="number" value="0" id="numberOrange"></label><br></div>
+            <label>Груши(80 рублей/штука)     <div><input type="number" value="0" id="numberGrushi"></label><br></div>
+            <label>Дыня(300 рублей/штука)     <div><input type="number" value="0" id="numberDini"></label><br></div>
             <input type="button" value="Рассчитать" onclick="ShowSumProduct()">
             <div id="itog">Итоговая сумма: </div>
         </div>
 
-        <div class="krugi krug1" onclick="removekrugi(this)">1</div>
-        <div class="krugi krug2" onclick="removekrugi(this)">2</div>
-        <div class="krugi krug3" onclick="removekrugi(this)">3</div>
-        <div class="krugi krug4" onclick="removekrugi(this)">4</div>
-        <div class="krugi krug5" onclick="removekrugi(this)">5</div>
-        <div class="krugi krug6" onclick="removekrugi(this)">6</div>
-        <div class="krugi krug7" onclick="removekrugi(this)">7</div>
-        <div class="krugi krug8" onclick="removekrugi(this)">8</div>
-        <div class="krugi krug9" onclick="removekrugi(this)">9</div>
-        <div class="krugi krug10" onclick="removekrugi(this)">10</div>
-
+        <div class="krugi">
+            <div class="krug1" id="1" onclick="removekrugi('1')">1</div>
+            <div class="krug2" id="2" onclick="removekrugi('2')">2</div>
+            <div class="krug3" id="3" onclick="removekrugi('3')">3</div>
+            <div class="krug4" id="4" onclick="removekrugi('4')">4</div>
+            <div class="krug5" id="5" onclick="removekrugi('5')">5</div>
+            <div class="krug6" id="6" onclick="removekrugi('6')">6</div>
+            <div class="krug7" id="7" onclick="removekrugi('7')">7</div>
+            <div class="krug8" id="8" onclick="removekrugi('8')">8</div>
+            <div class="krug9" id="9" onclick="removekrugi('9')">9</div>
+            <div class="krug10" id="10" onclick="removekrugi('10')">10</div>
+        </div>
     </main>
 
     <footer>
