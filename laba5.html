@@ -58,11 +58,14 @@
         }
 
         function ShowSumProduct(){
-            let Apple = parseInt((document.getElementById('numberApple').value));
-            let Orange = parseInt((document.getElementById('numberOrange').value));
-            let Grushi = parseInt((document.getElementById('numberGrushi').value));
-            let Dini = parseInt((document.getElementById('numberDini').value));
-
+            let inputA = document.getElementById('numberApple');
+            let inputO = document.getElementById('numberOrange');
+            let inputG= document.getElementById('numberGrushi');
+            let inputD = document.getElementById('numberDini');
+            let Apple = parseInt(inputA.value);
+            let Orange= parseInt(inputO.value);
+            let Grushi= parseInt(inputG.value);
+            let Dini= parseInt(inputD.value);
             let result = (Apple * 100) + (Orange * 150) + (Grushi * 80) + (Dini * 300);
 
             let output = document.getElementById('itog');
