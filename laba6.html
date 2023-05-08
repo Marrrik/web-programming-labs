@@ -24,12 +24,22 @@
             margin: 5px;
             padding: 5px;
         }
-
         .help-text {
             border-radius: 15px;
             background-color: aquamarine;
             height: 200px;
             width: 670px;
+        }
+        .color{
+            border: 3px solid salmon;
+            background-color: yellow;
+            color: brown;
+            width: 260px;
+            height: 110px;
+            text-align: center;
+        }
+        .color div {
+            padding: 15px;
         }
     </style>
     <script>
@@ -88,7 +98,23 @@
             helpButton.innerHTML = 'Показать правила игры';
         }
         }
-
+        function changeColor(div) {
+            if (div.style.backgroundColor == 'yellow'){
+            div.style.backgroundColor = 'red'
+            div.style.color = 'black'
+            document.getElementById('color-name').innerHTML = 'красный';
+            }
+            else if (div.style.backgroundColor == 'red') {
+                div.style.backgroundColor = 'black'
+                div.style.color = 'white'
+                document.getElementById('color-name').innerHTML = 'Чёрный';
+            }
+            else {
+                div.style.backgroundColor = 'yellow'
+                div.style.color = 'brown'
+                document.getElementById('color-name').innerHTML = 'жёлтый';
+            }
+        }
     </script>
 </head>
 <body>
@@ -136,8 +162,12 @@
                 <li>Игра заканчивается, когда игрок угадывает задуманное число, и выводится сообщение с числом попыток.</li>
             </ol>
         </div>
-        <div class="color" ondblclick="changeColor()">
-            Жёлтый, сделай двойной щелчок мыши, чтобы сментить цвет.
+        <div class="color" ondblclick="changeColor(this)">
+            <div>
+                Цвет: <span id="color-name">жёлтый</span><br>
+                Сделай двойной щелчок,<br>
+                чтобы сментить цвет.
+            </div>
         </div>
     </main>
 
