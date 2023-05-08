@@ -56,6 +56,21 @@
             transform: rotate(0);
             transition: 3s;
         }
+
+        .qatroWidth {
+            color: black;
+            background-color: antiquewhite;
+            border: 3px solid brown;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 8pt;
+            position: relative;
+            margin-top: 10px;
+            left: 0px;
+            line-height: 100px;
+            cursor: pointer;
+        }
     </style>
     <script>
         let number;
@@ -146,6 +161,18 @@
                 div.style.transform = "rotate(4turn)";
             }
         }
+
+        function WidthQatro(){
+            let Mblock = document.getElementById('MyBlockWidth');
+            NowWidth = parseInt(Mblock.offsetWidth);
+            NewWidth = NowWidth + 50;
+            if (NewWidth < 1000){
+                Mblock.style.width = NewWidth + 'px';
+            }
+            else {
+                Mblock.style.width = 100 + 'px';
+            }
+        }
     </script>
 </head>
 <body>
@@ -203,6 +230,10 @@
 
         <div class="qatro" onclick="muveQatro(this)" id="MyBlock">
             Щёлкни меня
+        </div>
+
+        <div class="qatroWidth" onclick="WidthQatro(this)" id="MyBlockWidth">
+            Щёлкни меня!
         </div>
     </main>
 
