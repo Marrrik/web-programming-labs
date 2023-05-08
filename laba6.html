@@ -17,6 +17,20 @@
             padding: 10px;
             text-align: center;
         }
+        .help {
+            border-radius: 15px;
+            background-color: aquamarine;
+            width: 400px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .help-text {
+            border-radius: 15px;
+            background-color: aquamarine;
+            height: 200px;
+            width: 670px;
+        }
     </style>
     <script>
         let number;
@@ -61,6 +75,20 @@
             screens[1].style.display = 'block';
             startGame()
         }
+
+        function toggleHelp() {
+        let helpButton = document.getElementById('show-help');
+        let helpText = document.getElementById('help-text');
+
+        if (helpText.style.display === 'none') {
+            helpText.style.display = 'block';
+            helpButton.innerHTML = 'Скрыть правила игры';
+        } else {
+            helpText.style.display = 'none';
+            helpButton.innerHTML = 'Показать правила игры';
+        }
+        }
+
     </script>
 </head>
 <body>
@@ -94,6 +122,22 @@
             <div>
                 <button>Ссыграть ещё раз</button>
             </div>
+        </div>
+        <div class="help">
+            <button id="show-help" onclick="toggleHelp()">Показать правила игры</button>
+        </div>
+        <div id="help-text" class="help-text" style="display: none;">
+            <h2 style="text-align: center;">Правила игры</h2>
+            <ol>
+                <li>Задумывается число от 1 до 100.</li>
+                <li>Игрок пытается угадать задуманное число, вводя свои варианты в поле ввода.</li>
+                <li>Если число игрока меньше задуманного, выводится сообщение "Вы ввели маленькое число".</li>
+                <li>Если число игрока больше задуманного, выводится сообщение "Вы ввели большое число".</li>
+                <li>Игра заканчивается, когда игрок угадывает задуманное число, и выводится сообщение с числом попыток.</li>
+            </ol>
+        </div>
+        <div class="color" ondblclick="changeColor()">
+            Жёлтый, сделай двойной щелчок мыши, чтобы сментить цвет.
         </div>
     </main>
 
