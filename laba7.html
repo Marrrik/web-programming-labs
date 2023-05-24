@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Старченко Марк Альбертович. Лабораторная работа 7</title>
+    <link rel="stylesheet" href="main.css">
+    <style></style>
+    <script>
+        function AddBlocks() {
+            let blocks = document.getElementById('blocks');
+            for(i=0; i<10; i++) {
+                let block = document.createElement('div');
+                block.innerHTML = 'Блок №' + (i+1) + ':' + (2*i**2);
+
+                blocks.appendChild(block);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        НГТУ, ФБ, Лабораторная работа 7
+    </header>
+    <main>
+        <button onclick="AddBlocks()">Создать блоки</button>
+        <div id="blocks"></div>
+    </main>
+    <footer>&copy;</footer>
+</body>
+</html>
