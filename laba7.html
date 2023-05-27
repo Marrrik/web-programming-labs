@@ -6,7 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Старченко Марк Альбертович. Лабораторная работа 7</title>
     <link rel="stylesheet" href="main.css">
-    <style></style>
+    <style>
+            .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            }
+
+            .red {
+            background-color: red;
+            }
+
+            .green {
+            background-color: green;
+            }
+        </style>
+    </style>
     <script>
         function AddBlocks() {
             let blocks = document.getElementById('blocks');
@@ -53,6 +76,33 @@
             }
 
         }
+        function greenred(){
+            let circle = document.getElementById('circle-container');
+            let number = document.getElementById('number-input');
+            let numCircle = parseInt(number.value);
+
+            for (let i=numCircle; i > 0; i--) {
+                let circle2 = document.createElement('div');
+                circle2.innerHTML = (i);
+
+                if (i % 2 == 0) {
+                    circle2.style.backgroundColor = 'green';
+                }
+                else {
+                    circle2.style.backgroundColor = 'red'
+                }
+                circle2.style.height = '30px';
+                circle2.style.width = '30px';
+                circle2.style.margin = '4px';
+                circle2.style.borderRadius = '50%';
+                circle2.style.display = 'inline-block';
+                circle2.style.textAlign = 'center';
+                circle2.style.lineHeight = '30px';
+                circle2.style.color = 'black'
+
+                circle.appendChild(circle2);
+            }
+        }
     </script>
 </head>
 <body>
@@ -69,7 +119,11 @@
 
         <button onclick="tenBlock()">Создать полупрозрачные блоки</button>
         <div id="transparentblocks"></div>
+
+        <input type="number" id="number-input" value="5" placeholder="Введите число кругов">
+        <button onclick="greenred()">Красное/Зеленое</button>
+        <div id="circle-container"></div>
     </main>
-    <footer>&copy;</footer>
+    <footer>&copy;<i>Марк Старченко, ФБИ-14, 2 курс, 2023</i></footer>
 </body>
 </html>
