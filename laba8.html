@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Старченко Марк Альбертович. Лабораторная работа 8</title>
     <link rel="stylesheet" href="main.css">
-    <style></style>
-    <script></script>
+    <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        .data_now{
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: center;
+            background-color: #fff;
+            border: 3px solid black;
+            border-radius: 30px;
+            height: auto;
+            width: 800px;
+            padding-left: 15px;
+        }
+    </style>
+    <script src="laba8.js"></script>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body onload="ShowDate()">
+    <header> НГТУ, ФБ, Лабораторная работа 8</header>
+    <main> 
+        <div class="data_now">
+            <div id="current_date0"></div>
+            <div id="current_date1"></div>
+            <div id="current_date2"></div>
+            <div id="current_date3"></div>
+            <div id="current_date4"></div>
+        </div>
+    </main>
     <footer>&copy;<i>Марк Старченко, ФБИ-14, 2 курс, 2023</i></footer>
 </body>
 </html>
