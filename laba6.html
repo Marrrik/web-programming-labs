@@ -71,6 +71,23 @@
             line-height: 100px;
             cursor: pointer;
         }
+        .clothes{
+            margin-top: 20px;
+            border: 1px solid;
+            border-radius: 3px 3px;
+            color: black;
+            border-color: black;
+            width: 400px;
+        }
+
+        #wear {
+            width: 200px;
+            height: auto; 
+            margin-top: 10px; 
+        }
+        .wear-color{
+            margin-bottom: 10px;
+        }
     </style>
     <script>
         let number;
@@ -99,6 +116,10 @@
             else if (userNumber < number) {
                 message.innerHTML = 'Вы ввели маленькое число';
             }
+            else if (isNaN(userNumber)) {
+                message.innerHTML = 'Введи число';
+
+            }
             else{
                 let screens = document.getElementsByClassName('game');
                 screens[1].style.display = 'none';
@@ -113,14 +134,17 @@
             let screens = document.getElementsByClassName('game');
             screens[2].style.display = 'none';
             screens[1].style.display = 'block';
-            startGame()
+            number = Math.floor(Math.random() *100) + 1;
+            document.getElementById('result').innerHTML = '';
+            document.getElementById('user-number').value='';
+            StartGame()
         }
 
         function toggleHelp() {
         let helpButton = document.getElementById('show-help');
-        let helpText = document.getElementById('help-text');
+        let helpText = document.getElementById('Instrukshn');
 
-        if (helpText.style.display === 'none') {
+        if (helpText.style.display == 'none') {
             helpText.style.display = 'block';
             helpButton.innerHTML = 'Скрыть правила игры';
         } else {
@@ -156,7 +180,6 @@
                 div.style.transform = "rotate(-4turn)";
             }
             else {
-                div.style.left == '0' + 'px';
                 div.style.left = '1300'+ 'px';
                 div.style.transform = "rotate(4turn)";
             }
@@ -171,6 +194,32 @@
             }
             else {
                 Mblock.style.width = 100 + 'px';
+            }
+        }
+        function filter(clothes) {
+            let color = document.getElementById('wear-color').value;
+            let type = document.getElementById('wear-type').value;
+            let wear = document.getElementById('wear');
+            if (color == 'Красный' && type == 'Футболка') {
+            wear.src = 'https://niceplaza.ru/wp-content/uploads/2018/10/3301525_e-4.jpg';
+            } else if (color == 'Белый' && type == 'Футболка') {
+            wear.src = 'http://supplytheory.com/wp-content/uploads/2012/11/SL04_White_Flat_Front_2009.jpg';
+            } else if (color == 'Черный' && type == 'Футболка') {
+            wear.src = 'https://media.gq.com/photos/5e6944f74d6be70008ac16c2/master/w_2000,h_1333,c_limit/Uniqlo-U-crew-neck-short-sleeve-T-shirt.jpgg';
+            } else if (color == 'Красный' && type == 'Поло') {
+            wear.src = 'http://vester2013.ru/upload/iblock/1bc/rubashka_polo_krasnyy.jpg';
+            } else if (color == 'Белый' && type == 'Поло') {
+            wear.src = 'https://www.professionalsport.ru/spree/products/000/139/236/original/irstpolcm6a100.jpg?1565859641';
+            } else if (color == 'Черный' && type == 'Поло') {
+            wear.src = 'https://a.d-cd.net/GEAAAgKibOA-960.jpg';
+            } else if (color == 'Красный' && type == 'Майка') {
+            wear.src = 'https://loloclo.ru/upload/iblock/75e/75ed59c1860e5836bb3b83c2092ac11e.jpg';
+            } else if (color == 'Белый' && type == 'Майка') {
+            wear.src = 'https://cdn2.chikiriki.club/files/ba/ba095d52f80811ea83017c8bca00012f.jpg';
+            } else if (color == 'Черный' && type == 'Майка') {
+            wear.src = 'https://images-eu.ssl-images-amazon.com/images/I/31wWKT89JVL._UL1000_.jpg';
+            } else {
+            wear.src = '';
             }
         }
     </script>
@@ -204,13 +253,13 @@
                 Количество попыток: <span id = "try-count"></span>
             </div>
             <div>
-                <button>Ссыграть ещё раз</button>
+                <button onclick="again()">Ссыграть ещё раз</button>
             </div>
         </div>
         <div class="help">
             <button id="show-help" onclick="toggleHelp()">Показать правила игры</button>
         </div>
-        <div id="help-text" class="help-text" style="display: none;">
+        <div id="Instrukshn" class="help-text" style="display: none;">
             <h2 style="text-align: center;">Правила игры</h2>
             <ol>
                 <li>Задумывается число от 1 до 100.</li>
@@ -234,6 +283,24 @@
 
         <div class="qatroWidth" onclick="WidthQatro(this)" id="MyBlockWidth">
             Щёлкни меня!
+        </div>
+
+        <div class = 'clothes'>
+            Цвет одежды:
+            <select id="wear-color">
+                <option>Красный</option>
+                <option>Белый</option>
+                <option>Черный</option>
+            </select><br>
+            Тип одежды:
+            <select id="wear-type">
+                <option>Футболка</option>
+                <option>Поло</option>
+                <option>Майка</option>
+            </select><br>
+
+            <button onclick="filter(this)">OK</button><br>
+            <img id="wear">
         </div>
         
     </main>
