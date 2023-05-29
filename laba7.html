@@ -117,6 +117,45 @@
             }
 
         }
+        function Cursmoney() {
+
+            let date = ['08-05-2023', '05-05-2023', '04-05-2023', '03-05-2023',
+                        '02-05-2023', '28-04-2023', '27-04-2023', '26-04-2023', '25-04-2023', '24-04-2023']
+
+            let exchange = [1.04, 1.04, 1.04, 1.04, 1.07,
+                            1.07, 1.09, 1.09, 1.08, 1.05 ]
+            let table = document.getElementById('curs');
+
+            for (let i = 0; i<exchange.length; i++) {
+                let tr = document.createElement('tr');
+                let td = document.createElement('td');
+                let newtd = document.createElement('td');
+                let minustd = document.createElement('td');
+                td.innerHTML = exchange[i]
+                newtd.innerHTML = date[i]
+                minustd.innerHTML = (exchange[i] - exchange[i - 1]).toFixed(2); 
+                tr.appendChild(newtd);
+                tr.appendChild(td);
+                tr.appendChild(minustd);
+                table.appendChild(tr)
+            
+            let sum = 0;
+                for(let i = 0; i < exchange.length; i++) {
+                    sum = sum + exchange [i];
+            }
+
+            let average = sum / exchange.length;
+            document.getElementById('sredne').innerHTML = 'Среднее значение: ' + average.toFixed(2);
+
+            let exchangemax = Math.max(...exchange)
+            let exchangemin = Math.min(...exchange)
+            let max = document.getElementById('max')
+            let min = document.getElementById('min')
+            max.innerHTML = 'Максимальная цена акции: ' + exchangemax
+            min.innerHTML = 'Минимальная цена акции: ' + exchangemin
+
+            }
+        }
     </script>
 </head>
 <body>
@@ -141,6 +180,13 @@
         
         <button onclick="Calculate()">Таблица умножения на 41</button>
         <table border="1" id = numbers></table>
+
+        <button onclick="Cursmoney()">Курс акций «31.Московский кредитный банк»</button>
+        <table border="1" id = curs></table>
+        <div id="sredne"></div>
+        <div id="max"></div>
+        <div id="min"></div>
+
         
     </main>
     <footer>&copy;<i>Марк Старченко, ФБИ-14, 2 курс, 2023</i></footer>
