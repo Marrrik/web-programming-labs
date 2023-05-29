@@ -27,11 +27,23 @@
             width: 800px;
             padding-left: 15px;
         }
+
+        .clock1 {
+            text-align: right;
+            color: rebeccapurple;
+            font-size: 20px;
+            margin: 5px;
+
+        }
+        
     </style>
     <script src="laba8.js"></script>
 </head>
 <body onload="ShowDate()">
-    <header> НГТУ, ФБ, Лабораторная работа 8</header>
+    <header> 
+        НГТУ, ФБ, Лабораторная работа 8
+        <div  class="clock1" id="clock" >00:00:00</div>
+    </header>
     <main> 
         <div class="data_now">
             <div id="current_date0"></div>

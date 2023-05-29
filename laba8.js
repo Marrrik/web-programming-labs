@@ -38,3 +38,11 @@ function Clear(){
     inputDate.value = '';
     day.innerHTML = '';
 }
+
+function showTime() {
+    let today = new Date();
+    let currentTime = today.toLocaleTimeString('ru-RU');
+    document.getElementById('clock').innerHTML = currentTime;
+}
+setInterval(showTime, 1000);
+
