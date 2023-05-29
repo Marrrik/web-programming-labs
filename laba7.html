@@ -103,6 +103,20 @@
                 circle.appendChild(circle2);
             }
         }
+
+            function Calculate() {
+            let number = 41;
+            let table = document.getElementById('numbers')
+
+            for (let i = 13; i<=33; i++) {
+                let tr = document.createElement('tr');
+                let td = document.createElement('td');
+                td.innerHTML = number + '*' + i + '=' + (number * i)
+                tr.appendChild(td);
+                table.appendChild(tr);
+            }
+
+        }
     </script>
 </head>
 <body>
@@ -123,6 +137,11 @@
         <input type="number" id="number-input" value="5" placeholder="Введите число кругов">
         <button onclick="greenred()">Красное/Зеленое</button>
         <div id="circle-container"></div>
+
+        
+        <button onclick="Calculate()">Таблица умножения на 41</button>
+        <table border="1" id = numbers></table>
+        
     </main>
     <footer>&copy;<i>Марк Старченко, ФБИ-14, 2 курс, 2023</i></footer>
 </body>
