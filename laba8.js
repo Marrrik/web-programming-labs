@@ -16,3 +16,25 @@ function ShowDate(){
     out4.innerHTML ="Дата и время для китайской локали: " + Today4.toLocaleString('zh-CN');
 
 }
+
+function showDaysCount() {
+    let today = new Date();
+    let inputDate = document.querySelector('input[type=date');
+    let birthday = new Date(inputDate.value);
+    let daysCount = (today - birthday)/1000/60/60/24;
+    daysCount = Math.floor(daysCount);
+    let day = document.getElementById('days');
+    if(isNaN(inputDate)){
+        day.innerHTML = 'Нет значений';
+    }
+    else{
+        day.innerHTML = 'Количество дней с дня рождения: ' + daysCount;
+    }
+}
+function Clear(){
+    let inputDate = document.querySelector('input[type=date');
+    let day = document.getElementById('days');
+
+    inputDate.value = '';
+    day.innerHTML = '';
+}

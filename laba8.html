@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="main.css">
     <style>
         main{
-            display: flex;
+            /* display: flex; */
             justify-content: center;
+            text-align: center;
+            max-width: 1800px;
+            overflow-x: hidden;
         }
         .data_now{
+            margin-left: 23%;
             color: black;
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
@@ -35,6 +39,17 @@
             <div id="current_date2"></div>
             <div id="current_date3"></div>
             <div id="current_date4"></div>
+        </div>
+
+        <div >
+            <label>Дата рождения: <input type="date"></label>
+        </div>
+        <div>
+            <button onclick="showDaysCount()">Показать число дней</button>
+            <div id="days"></div>
+        </div>
+        <div>
+            <button onclick="Clear()">Очистить после ввода</button>
         </div>
     </main>
     <footer>&copy;<i>Марк Старченко, ФБИ-14, 2 курс, 2023</i></footer>
