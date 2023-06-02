@@ -19,20 +19,23 @@ function ShowDate(){
 
 function showDaysCount() {
     let today = new Date();
-    let inputDate = document.querySelector('input[type=date');
+
+    let inputDate = document.querySelector('input[type=date]');
     let birthday = new Date(inputDate.value);
     let daysCount = (today - birthday)/1000/60/60/24;
     daysCount = Math.floor(daysCount);
     let day = document.getElementById('days');
-    if(isNaN(inputDate)){
-        day.innerHTML = 'Нет значений';
-    }
-    else{
-        day.innerHTML = 'Количество дней с дня рождения: ' + daysCount;
-    }
+    day.innerHTML = 'Количество дней с дня рождения: ' + daysCount;
+    // if(isNaN(inputDate)){
+    //     day.innerHTML = 'Нет значений';
+    // }
+    // else{
+    //     day.innerHTML = 'Количество дней с дня рождения: ' + daysCount;
+    //     log(a)
+    // }
 }
 function Clear(){
-    let inputDate = document.querySelector('input[type=date');
+    let inputDate = document.querySelector('input[type=date]');
     let day = document.getElementById('days');
 
     inputDate.value = '';
