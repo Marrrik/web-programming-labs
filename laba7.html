@@ -119,11 +119,9 @@
         }
         function Cursmoney() {
 
-            let date = ['08-05-2023', '05-05-2023', '04-05-2023', '03-05-2023',
-                        '02-05-2023', '28-04-2023', '27-04-2023', '26-04-2023', '25-04-2023', '24-04-2023']
+            let date = ['30-05-2023', '29-05-2023', '26-05-2023', '25-05-2023','24-05-2023', '23-05-2023', '27-05-2023', '22-05-2023']
 
-            let exchange = [1.04, 1.04, 1.04, 1.04, 1.07,
-                            1.07, 1.09, 1.09, 1.08, 1.05 ]
+            let exchange = [6.04, 6.14, 6.26, 6.21, 6.30, 6.66, 6.51, 6.47]
             let table = document.getElementById('curs');
 
             for (let i = 0; i<exchange.length; i++) {
@@ -137,11 +135,12 @@
                 tr.appendChild(newtd);
                 tr.appendChild(td);
                 tr.appendChild(minustd);
-                table.appendChild(tr)
+                table.appendChild(tr);
+            }
             
             let sum = 0;
-                for(let i = 0; i < exchange.length; i++) {
-                    sum = sum + exchange [i];
+            for(let i = 0; i < exchange.length; i++) {
+                sum = sum + exchange [i];
             }
 
             let average = sum / exchange.length;
@@ -153,8 +152,6 @@
             let min = document.getElementById('min')
             max.innerHTML = 'Максимальная цена акции: ' + exchangemax
             min.innerHTML = 'Минимальная цена акции: ' + exchangemin
-
-            }
         }
     </script>
 </head>
@@ -185,7 +182,7 @@
         <table border="1" id = curs></table>
         <div id="sredne"></div>
         <div id="max"></div>
-        <div id="min"></div>
+        <div id="min" style="margin-bottom: 50px;"></div>
 
         
     </main>

@@ -28,6 +28,7 @@ header:hover {
 
 main {
         margin: 10px 20px;
+        margin-bottom: 50px;
     }
     
 footer {
@@ -38,13 +39,13 @@ footer {
         text-align: right;
         transition: 1.5s 1.5s;
         transition-delay: 1.5s;
-        position: absolute;
         width: 100%;
         padding-right: 40px;
         bottom: 0;
         position: fixed;
         right: 0;
         left: 0;
+        margin-top: 50px;
 }
 
 footer:visited {
